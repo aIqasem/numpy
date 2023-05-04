@@ -487,7 +487,7 @@
 > 
 - Create this array
     
-    ![Untitled](NumPy%20Basics%202d9334d3099747c395f455c6f3c836d6/Untitled.png)
+    ![array.png](https://github.com/aIqasem/numpy/blob/main/array.png)
     
 - *Solution*
     
