@@ -507,7 +507,5 @@
     ```
     
     ---
-    
 
-> Stopped [*here*](https://youtu.be/QUT1VHiLmmI?t=1898) at $*31 \; of \;  58 \; mins*$
->
+
