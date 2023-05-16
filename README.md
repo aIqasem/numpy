@@ -49,166 +49,176 @@
     ---
     
 
-> ***Some Coding***
+> ***Some Basic Coding***
 > 
-- ***Basic NumPy***
-    - **creating a numpy array**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        ```
-        
-        ---
-        
+> - [***Basic NumPy***](NumPy%20Basics%202d9334d3099747c395f455c6f3c836d6.md)
+> - [*****Mathematics*****](NumPy%20Basics%202d9334d3099747c395f455c6f3c836d6.md)
+> - [*****Statistics*****](NumPy%20Basics%202d9334d3099747c395f455c6f3c836d6.md)
+> - [*****Reorganizing arrays*****](NumPy%20Basics%202d9334d3099747c395f455c6f3c836d6.md)
+
+---
+
+## ***Basic NumPy***
+
+<br>
+
+- ***creating a numpy array***
     
-    - **Dimensions**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        
-        print(a.ndim)
-        print(b.ndim)
-        ```
-        
-        ```
-        1
-        2
-        ```
-        
-        ---
-        
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    ```
     
-    - **Shape**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        
-        print(a.shape)
-        print(b.shape)
-        ```
-        
-        ```
-        (5,)
-        (2, 3)
-        ```
-        
-        ---
-        
-    - **Data Type**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        
-        print(a.dtype)
-        print(b.dtype)
-        ```
-        
-        ```
-        int64
-        float64
-        ```
-        
-        - **To Change the data type of a numpy array**
-        
-        ```python
-        c = np.array([1,2,3], dtype='int16')
-        print(c.dtype)
-        ```
-        
-        ```
-        int16
-        ```
-        
-        ---
-        
+    ---
     
-    - **Size (in bytes)**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        c = np.array([1,2,3], dtype='int16')
-        
-        print(a.itemsize)
-        print(b.itemsize)
-        print(c.itemsize)
-        ```
-        
-        ```
-        8
-        8
-        2
-        ```
-        
-        ---
-        
+
+- ***Dimensions***
     
-    - **Number of elements**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        c = np.array([1,2,3], dtype='int16')
-        
-        print(a.size)
-        print(b.size)
-        print(c.size)
-        ```
-        
-        ```
-        5
-        6
-        3
-        ```
-        
-        ---
-        
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
     
-    - **Total size (in bytes)**
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        c = np.array([1,2,3], dtype='int16')
-        
-        print(a.size * a.itemsize)
-        print(b.size * b.itemsize)
-        print(c.size * c.itemsize)
-        ```
-        
-        ```
-        40
-        48
-        6
-        ```
-        
-        - Another way
-        
-        ```python
-        a = np.array([1,2,3,4,5])
-        b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
-        c = np.array([1,2,3], dtype='int16')
-        
-        print(a.nbytes)
-        print(b.nbytes)
-        print(c.nbytes)
-        ```
-        
-        ```
-        40
-        48
-        6
-        ```
-        
-        ---
-        
+    print(a.ndim)
+    print(b.ndim)
+    ```
+    
+    ```
+    1
+    2
+    ```
+    
+    ---
+    
+
+- ***Shape***
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    
+    print(a.shape)
+    print(b.shape)
+    ```
+    
+    ```
+    (5,)
+    (2, 3)
+    ```
+    
+    ---
+    
+- ***Data Type***
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    
+    print(a.dtype)
+    print(b.dtype)
+    ```
+    
+    ```
+    int64
+    float64
+    ```
+    
+    - To Change the data type of a numpy array
+    
+    ```python
+    c = np.array([1,2,3], dtype='int16')
+    print(c.dtype)
+    ```
+    
+    ```
+    int16
+    ```
+    
+    ---
+    
+
+- ***Size (in bytes)***
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    c = np.array([1,2,3], dtype='int16')
+    
+    print(a.itemsize)
+    print(b.itemsize)
+    print(c.itemsize)
+    ```
+    
+    ```
+    8
+    8
+    2
+    ```
+    
+    ---
+    
+
+- ***Number of elements***
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    c = np.array([1,2,3], dtype='int16')
+    
+    print(a.size)
+    print(b.size)
+    print(c.size)
+    ```
+    
+    ```
+    5
+    6
+    3
+    ```
+    
+    ---
+    
+
+- ***Total size (in bytes)***
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    c = np.array([1,2,3], dtype='int16')
+    
+    print(a.size * a.itemsize)
+    print(b.size * b.itemsize)
+    print(c.size * c.itemsize)
+    ```
+    
+    ```
+    40
+    48
+    6
+    ```
+    
+    - Another way
+    
+    ```python
+    a = np.array([1,2,3,4,5])
+    b = arr2 = np.array([[9.0,8.0,7.0], [6.0,5.0,4.0]])
+    c = np.array([1,2,3], dtype='int16')
+    
+    print(a.nbytes)
+    print(b.nbytes)
+    print(c.nbytes)
+    ```
+    
+    ```
+    40
+    48
+    6
+    ```
+    
+    ---
+    
 
 - ***Accessing - Changing specific elements, rows, columns, etc***
-    - **Creating our array**
+    - ***Creating our array***
         
         ```python
         a = np.array([[1,2,3,4,5,6,7],[8,9,10,11,12,13,14]])
@@ -226,7 +236,7 @@
         ---
         
     
-    - **Get an element** `[r,c]`
+    - ***Get an element*** `[r,c]`
         
         ```python
         print(a[1,5])
@@ -248,7 +258,7 @@
         
         ---
         
-    - **Get a row** `[r,:]`
+    - ***Get a row*** `[r,:]`
         
         ```python
         print(a[0,:])
@@ -260,7 +270,7 @@
         
         ---
         
-    - **Get a column**
+    - ***Get a column***
         
         ```python
         b = np.array([3,10])
@@ -317,7 +327,7 @@
         ---
         
     
-    - **Change a column**
+    - ***Change a column***
         
         ```python
         a[:,2] = 5 ***# This changes all column elemnts to 5***
@@ -337,7 +347,7 @@
         
         ---
         
-    - **Array of Array of vectors**
+    - ***Array of Array of vectors***
         
         ```python
         d3 = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
@@ -357,7 +367,7 @@
         (2, 2, 2)
         ```
         
-        - **Get elements**
+        - ***Get elements***
         
         ```python
         print(d3[0,0,0]) # 1
@@ -375,7 +385,7 @@
         
 
 - ***Initializing different types of arrays***
-    - Array of zeros - ones - some other value
+    - ***Array of zeros - ones - some other value***
         
         ```python
         a = np.zeros([2,3])
@@ -402,110 +412,470 @@
         
         ---
         
-
-- Random decimal
+    
+    - ***Random decimal***
+        
+        ```python
+        a = np.random.rand(2,3)
+        print(a)
+        ```
+        
+        ```
+        [[0.32903081 0.05373669 0.17231712]
+         [0.25423816 0.5425841  0.6214635 ]]
+        ```
+        
+        ---
+        
+    - ***Random int*** `(start,end,size())`***, start is 0 by default, end in exclusive***
+        
+        ```python
+        a = np.random.randint(10, size=(3,3))
+        print(a)
+        ```
+        
+        ```
+        [[3 0 5]
+         [7 6 6]
+         [7 2 7]]
+        ```
+        
+        ---
+        
+    - ***The Identity matrix***
+        
+        ```python
+        print(np.identity(3))
+        ```
+        
+        ```
+        [[1. 0. 0.]
+         [0. 1. 0.]
+         [0. 0. 1.]]
+        ```
+        
+        ---
+        
+    - ***Repeating***
+        
+        ```python
+        a = np.array([[1,2,3]])
+        print(a)
+        ```
+        
+        - *Note: ‘a’ is a multidimensional array to support applying repeating in axis 0 and 1 as following*
+        
+        ```
+        [[1 2 3]]
+        ```
+        
+        ```python
+        r = np.repeat(a,3)
+        print(r)
+        ```
+        
+        ```
+        [1 1 1 2 2 2 3 3 3]
+        ```
+        
+        ```python
+        r = np.repeat(a,3, axis = 0)
+        print(r)
+        ```
+        
+        ```
+        [[1 2 3]
+         [1 2 3]
+         [1 2 3]]
+        ```
+        
+        ---
+        
+    
+    > ***Quiz***
+    > 
+    - Create this array
+        
+        ![Array](https://drive.google.com/file/d/1pxXUU8g3jDLqJ2oDyNxRm2toKNveLlvB/view?usp=sharing)
+        
+    - *Solution*
+        
+        ```python
+        a = np.ones((5,5))
+        a[1:-1,1:-1] = 0
+        a[2,2] = 9
+        print(a)
+        ```
+        
+        ```
+        [[1. 1. 1. 1. 1.]
+         [1. 0. 0. 0. 1.]
+         [1. 0. 9. 0. 1.]
+         [1. 0. 0. 0. 1.]
+         [1. 1. 1. 1. 1.]]
+        ```
+        
+        ---
+        
+- ***Copying arrays***
     
     ```python
-    a = np.random.rand(2,3)
+    a = np.array([1,2,3])
+    b = a
+    b[0] = 0
+    
     print(a)
     ```
     
     ```
-    [[0.32903081 0.05373669 0.17231712]
-     [0.25423816 0.5425841  0.6214635 ]]
+    [0 2 3]
+    ```
+    
+    - Copying arrays like this doesn’t work, this just created some pointer to the memory storing the array
+    - Copy arrays like this:
+    
+    ```python
+    a = np.array([1,2,3])
+    c = a.copy()
+    c[1] = 50
+    
+    print(a)
+    print(c)
+    ```
+    
+    ```
+    [1 2 3]
+    [ 0 50  3]
     ```
     
     ---
     
 
-- Random int `(start,end,size())`, start is 0 by default, end in exclusive
+## *****Mathematics*****
+
+<br>
+
+- ***Element-wise operation***
     
     ```python
-    a = np.random.randint(10, size=(3,3))
+    a = np.array([1,2,3,4,5])
+    a += 2
+    print(a)
+    a -= 2
+    print(a)
+    a *= 2
     print(a)
     ```
     
     ```
-    [[3 0 5]
-     [7 6 6]
-     [7 2 7]]
+    [3 4 5 6 7]
+    [1 2 3 4 5]
+    [ 2  4  6  8 10]
     ```
     
     ---
     
-- The Identity matrix
+- ***Take `sin` of all values***
     
     ```python
-    print(np.identity(3))
+    sins = np.sin(a)
+    print(sins)
     ```
     
     ```
-    [[1. 0. 0.]
-     [0. 1. 0.]
-     [0. 0. 1.]]
+    [ 0.90929743 -0.7568025  -0.2794155   0.98935825 -0.54402111]
     ```
     
     ---
     
-- Repeating
+- ***Linear algebra***
     
     ```python
-    a = np.array([[1,2,3]])
+    a = np.ones((2,3))
+    b = np.full((3,2), 2)
+    
     print(a)
-    ```
-    
-    - *Note: ‘a’ is a multidimensional array to support applying repeating in axis 0 and 1 as following*
-    
-    ```
-    [[1 2 3]]
-    ```
-    
-    ```python
-    r = np.repeat(a,3)
-    print(r)
+    print()
+    print(b)
+    np.matmul(a,b)
     ```
     
     ```
-    [1 1 1 2 2 2 3 3 3]
-    ```
+    [[1. 1. 1.]
+     [1. 1. 1.]]
     
-    ```python
-    r = np.repeat(a,3, axis = 0)
-    print(r)
-    ```
+    [[2 2]
+     [2 2]
+     [2 2]]
     
-    ```
-    [[1 2 3]
-     [1 2 3]
-     [1 2 3]]
+    array([[6., 6.],
+           [6., 6.]])
     ```
     
     ---
     
-
-> ***Quiz***
-> 
-- Create this array
-    
-    ![array.png](https://github.com/aIqasem/numpy/blob/main/array.png)
-    
-- *Solution*
+- ***Find the determinant***
     
     ```python
-    a = np.ones((5,5))
-    a[1:-1,1:-1] = 0
-    a[2,2] = 9
+    a = np.identity(3)*3
     print(a)
+    print()
+    print(np.linalg.det(a))
     ```
     
     ```
-    [[1. 1. 1. 1. 1.]
-     [1. 0. 0. 0. 1.]
-     [1. 0. 9. 0. 1.]
-     [1. 0. 0. 0. 1.]
-     [1. 1. 1. 1. 1.]]
+    [[3. 0. 0.]
+     [0. 3. 0.]
+     [0. 0. 3.]]
+    
+    27.0
     ```
     
     ---
+    
 
+## *****Statistics*****
 
+<br>
+
+- ***min and max***
+    
+    ```python
+    st = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+    np.max(st)
+    np.min(st)
+    ```
+    
+    ```
+    10
+    1
+    ```
+    
+    ---
+    
+- ***Get the min or max in a row or a column***
+    
+    ```python
+    st = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+    print(st)
+    
+    ***# max of each row***
+    np.max(st, axis=1) 
+    
+    ***# max of each column***
+    np.max(st, axis=0) 
+    ```
+    
+    ```
+    ***# st***
+    array([[ 1,  2,  3,  4,  5],
+           [ 6,  7,  8,  9, 10]])
+    
+    ***# max of each row***
+    array([ 5, 10])
+    
+    ***# max of each column***
+    array([ 6,  7,  8,  9, 10])
+    ```
+    
+    ---
+    
+- ***Sum (all - row - columns)***
+    
+    ```python
+    st = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+    print(st)
+    ```
+    
+    ```
+    array([[ 1,  2,  3,  4,  5],
+           [ 6,  7,  8,  9, 10]])
+    ```
+    
+    - *all elements*
+    
+    ```python
+    np.sum(st)
+    ```
+    
+    ```
+    55
+    ```
+    
+    - *sum of each row*
+    
+    ```python
+    np.sum(st, axis=1)
+    ```
+    
+    ```
+    array([15, 40])
+    ```
+    
+    - *sum of each column*
+    
+    ```python
+    np.sum(st, axis=0)
+    ```
+    
+    ```
+    array([ 7,  9, 11, 13, 15])
+    ```
+    
+    ---
+    
+- ***Mean and Median***
+    
+    ```python
+    print(np.mean(st))
+    print(np.median(st))
+    ```
+    
+    ```
+    5.5
+    5.5
+    ```
+    
+    ---
+    
+
+## *****Reorganizing arrays*****
+
+<br>
+
+- ***Reshaping***
+    
+    ```python
+    a = np.array([[1,2,3,4],[5,6,7,8]])
+    print(a , "\n\n Shape:\n" , a.shape)
+    ```
+    
+    ```
+    [[1 2 3 4]
+     [5 6 7 8]] 
+    
+     Shape:
+     (2, 4)
+    ```
+    
+    - Shaping should have the same number of elements that fits the new shape
+    
+    ```python
+    after = a.reshape((8,1))
+    print(after)
+    ```
+    
+    ```
+    [[1]
+     [2]
+     [3]
+     [4]
+     [5]
+     [6]
+     [7]
+     [8]]
+    ```
+    
+    ```python
+    after = a.reshape((1,8))
+    print(after)
+    ```
+    
+    ```
+    [[1 2 3 4 5 6 7 8]]
+    ```
+    
+    ---
+    
+- ***Vertically stacking vectors***
+    
+    *works for same number of columns*
+    
+    ```python
+    v1 = np.array([1,2,3,4])
+    v2 = np.array([5,6,7,8])
+    v_stack = np.vstack([v1,v2])
+    
+    print(v_stack)
+    ```
+    
+    ```
+    [[1 2 3 4]
+     [5 6 7 8]]
+    ```
+    
+    - *stacking `v1`,`v2`,`v_stack`*
+    
+    ```python
+    v_another_stack = np.vstack([v1,v2,v_stack])
+    print(v_another_stack)
+    ```
+    
+    - *This works because v_stack has the same number of columns*
+    
+    ```
+    [[1 2 3 4]
+     [5 6 7 8]
+     [1 2 3 4]
+     [5 6 7 8]]
+    ```
+    
+    - U can stack specific rows like this
+    
+    ```python
+    v_another_stack = np.vstack([v1,v2,v_stack[0]])
+    print(v_another_stack)
+    ```
+    
+    ```
+    [[1 2 3 4]
+     [5 6 7 8]
+     [1 2 3 4]]
+    ```
+    
+    ---
+    
+- ***Horizontal stacking***
+    
+    *works for same number of rows*
+    
+    ```python
+    v1 = np.array([1,2,3,4])
+    v2 = np.array([5,6,7,8])
+    v_stack = np.hstack([v1,v2])
+    
+    print(v_stack)
+    ```
+    
+    ```
+    [1 2 3 4 5 6 7 8]
+    ```
+    
+    - *Stacking (same rows) different number of columns*
+    
+    ```python
+    arr1 = np.ones((2,4))
+    arr2 = np.zeros((2,2))
+    
+    print(arr1, "\n\n", arr2)
+    ```
+    
+    ```
+    [[1. 1. 1. 1.]
+     [1. 1. 1. 1.]] 
+    
+     [[0. 0.]
+     [0. 0.]]
+    ```
+    
+    ```python
+    h_stack = np.hstack([arr1,arr2])
+    print(h_stack)
+    ```
+    
+    ```
+    [[1. 1. 1. 1. 0. 0.]
+     [1. 1. 1. 1. 0. 0.]]
+    ```
+    
+    ---
