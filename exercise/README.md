@@ -38,6 +38,8 @@
 
 ---
 
+<br>
+
 ### _Indexing & Slicing_
 
 - `(9)`<br>
@@ -69,6 +71,8 @@
     ```
 
 ---
+
+<br>
 
 ### _NumPy common functions_
 
@@ -114,6 +118,8 @@
 
 ---
 
+<br>
+
 ### _Statistics_
 
 - `(16)`<br> Calculate the following.<br>
@@ -130,6 +136,8 @@
     ```
 
 ---
+
+<br>
 
 ### _Maths_
 
