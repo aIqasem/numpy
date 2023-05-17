@@ -4,4 +4,4 @@
 
 <br>
 
-- Don't forget to see the [**_exercise_**.](https://github.com/aIqasem/numpy/tree/main/exercise)
+- Don't forget to see the [**exercise**.](https://github.com/aIqasem/numpy/tree/main/exercise)
