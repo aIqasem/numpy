@@ -1,4 +1,4 @@
-# simple exercises
+# Simple Exercises
 
 ### _Create Array_
 
